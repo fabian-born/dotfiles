@@ -29,8 +29,8 @@ ln -sf $HOME/dotfiles/fzf/ $HOME/.fzf
 ln -sf $HOME/dotfiles/p10k.zsh $HOME/.p10k.zsh
 
 cd $HOME/dotfiles
-git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/dotfiles/zsh-themes/powerlevel10k
-source $HOME/dotfiles/zsh-themes/powerlevel10k/powerlevel10k.zsh-theme
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k
+
 
 $HOME/.fzf/install --all
 
