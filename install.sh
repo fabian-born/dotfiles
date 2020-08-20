@@ -6,6 +6,7 @@
 #
 #  Changelog:
 #  # 2020/06/30 	initial
+#  # 2020/07/20		changes in zsh
 ##
 
 if [ -d $HOME/dotfiles ]; then
