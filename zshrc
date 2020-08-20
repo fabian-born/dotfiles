@@ -108,6 +108,7 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/dotfiles/fubectl.source ] && source ~/dotfiles/fubectl.source
 [[ $- == *i* ]] && source "~/dotfiles/completion.zsh" 2> /dev/null
 [ -f ~/dotfiles/aliases.source ] && source ~/dotfiles/aliases.source
+[ -f ~/dotfiles/functions.sh ] && source ~/dotfiles/functions.sh
 # Key bindings
 # ------------
 source ~/dotfiles/key-bindings.zsh
