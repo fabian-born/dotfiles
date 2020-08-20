@@ -1,1 +1,2 @@
 alias cat=batcat
+alias gitup=git add . ; git commit -m "Modify install.sh | `date +%d.%m.%Y:%H:%M:%S`"; git push -u origin
