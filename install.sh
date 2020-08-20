@@ -15,7 +15,7 @@ else
 fi
 
 cd $HOME/dotfiles
-git submodule update --init --recursive
+git clone --depth 1 https://github.com/junegunn/fzf.git $HOME/dotfiles/fzf
 
 mkdir -p $HOME/.vimbackup
 mkdir -p $HOME/.config/nvim
@@ -25,6 +25,10 @@ ln -sf $HOME/dotfiles/zshrc $HOME/.zshrc
 ln -sf $HOME/dotfiles/tmux.conf $HOME/.tmux.conf
 ln -sf $HOME/dotfiles/tmux $HOME/.tmux
 ln -sf $HOME/dotfiles/fzf/ $HOME/.fzf
-ln -sf $HOME/dotfiles/functions $HOME/.functions
+ln -sf $HOME/dotfiles/p10k.zsh $HOME/.p10k.zsh
+
+cd $HOME/dotfiles
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/dotfiles/zsh-themes/powerlevel10k
+
 
 $HOME/.fzf/install --all
