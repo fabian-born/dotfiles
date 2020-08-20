@@ -31,4 +31,4 @@ cd $HOME/dotfiles
 git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/dotfiles/zsh-themes/powerlevel10k
 ln -sf $HOME/dotfiles/zsh-themes/powerlevel10 $HOME/.oh-my-zsh/themes/powerlevel10
 
-k$HOME/.fzf/install --all
+$HOME/.fzf/install --all
